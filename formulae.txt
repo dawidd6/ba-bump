@@ -1,0 +1,13 @@
+pnpm
+gatsby-cli
+firebase-cli
+contentful-cli
+angular-cli
+devspace
+just
+micro
+vcpkg
+vlang
+serverless
+kubernetes-cli
+fx
