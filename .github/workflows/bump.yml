@@ -17,11 +17,13 @@ jobs:
       matrix:
         formula:
           - pnpm
-    continue-on-error: true
+          - firebase-cli
+          - gatsby-cli
     runs-on: macos-latest
     steps:
       - name: Bump formulae
         uses: dawidd6/action-homebrew-bump-formula@v3
+        continue-on-error: true
         with:
           token: ${{secrets.TOKEN}}
           formula: ${{matrix.formula}}
