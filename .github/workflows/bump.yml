@@ -15,10 +15,17 @@ jobs:
   bump:
     runs-on: macos-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Read formulae
+        id: formulae
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: formulae.txt
       - name: Bump formulae
         uses: dawidd6/action-homebrew-bump-formula@master
         continue-on-error: true
         with:
           token: ${{secrets.TOKEN}}
-          formula: pnpm gatsby-cli firebase-cli
+          formula: ${{steps.formulae.outputs.content}}
           livecheck: true
