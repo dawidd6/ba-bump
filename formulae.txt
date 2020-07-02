@@ -1,5 +1,4 @@
 pnpm
-gatsby-cli
 firebase-cli
 contentful-cli
 angular-cli
@@ -11,3 +10,13 @@ vlang
 serverless
 kubernetes-cli
 fx
+lazydocker
+starship
+docker
+docker-compose
+ungit
+netlify-cli
+typescript
+okteto
+kustomize
+ack
