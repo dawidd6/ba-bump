@@ -1,9 +1,6 @@
 name: Bump
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     # Every 8 hours
     - cron: '0 */8 * * *'
@@ -23,7 +20,7 @@ jobs:
         with:
           path: formulae.txt
       - name: Bump formulae
-        uses: dawidd6/action-homebrew-bump-formula@master
+        uses: dawidd6/action-homebrew-bump-formula@v3
         continue-on-error: true
         with:
           token: ${{secrets.TOKEN}}
