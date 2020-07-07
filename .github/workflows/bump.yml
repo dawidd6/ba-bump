@@ -5,8 +5,6 @@ on:
     # Every 12 hours
     - cron: '0 */12 * * *'
   workflow_dispatch:
-    types:
-      - bump
 
 jobs:
   bump:
