@@ -1,4 +1,4 @@
-# ba-bump
+# Bumping fest
 
 Automatic Homebrew formulae bumping.
 
