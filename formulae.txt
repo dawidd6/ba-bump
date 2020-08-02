@@ -25,6 +25,7 @@ skopeo
 b3sum
 traefik
 k3d
+k9s
 golang-migrate
 docker-slim
 consul-template
@@ -37,3 +38,4 @@ gofish
 argo
 ship
 neofetch
+benthos
