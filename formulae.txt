@@ -36,3 +36,4 @@ buildkit
 gofish
 argo
 ship
+neofetch
