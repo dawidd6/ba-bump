@@ -6,7 +6,7 @@ devspace
 just
 micro
 vcpkg
-vlang
+goreleaser
 serverless
 kubernetes-cli
 fx
