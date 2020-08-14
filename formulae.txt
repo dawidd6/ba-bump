@@ -39,3 +39,4 @@ argo
 ship
 neofetch
 benthos
+apidoc
