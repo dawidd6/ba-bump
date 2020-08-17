@@ -71,3 +71,4 @@ jfrog-cli
 hcloud
 whistle
 virgil
+serf
