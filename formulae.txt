@@ -72,3 +72,5 @@ hcloud
 whistle
 virgil
 serf
+nfpm
+etcd
