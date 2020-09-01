@@ -12,15 +12,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Read formulae
-        id: formulae
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: formulae.txt
       - name: Bump formulae
         uses: dawidd6/action-homebrew-bump-formula@v3
         continue-on-error: true
         with:
           token: ${{secrets.TOKEN}}
-          formula: ${{steps.formulae.outputs.content}}
           livecheck: true
+        env:
+          HOMEBREW_LIVECHECK_WATCHLIST: formulae
