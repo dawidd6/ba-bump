@@ -1,17 +1,12 @@
-pnpm
 devspace
 just
 micro
 vcpkg
 goreleaser
-serverless
-fx
 lazydocker
 starship
 docker
 docker-compose
-ungit
-typescript
 okteto
 kustomize
 ack
@@ -49,7 +44,6 @@ subfinder
 gitleaks
 mmctl
 doctl
-cartridge-cli
 consul
 minikube
 kumactl
