@@ -20,3 +20,4 @@ jobs:
           livecheck: true
         env:
           HOMEBREW_LIVECHECK_WATCHLIST: formulae
+          HOMEBREW_STDERR: 1
