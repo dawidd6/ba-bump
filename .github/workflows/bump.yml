@@ -12,12 +12,7 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Test bump
-        env:
-          HOMEBREW_GITHUB_API_TOKEN: ${{secrets.TOKEN}}
-        run: brew bump-formula-pr --no-audit --no-browse --version=0.138.2 helmfile
       - name: Bump formulae
-        if: ${{false}}
         uses: dawidd6/action-homebrew-bump-formula@v3
         continue-on-error: true
         with:
@@ -25,4 +20,3 @@ jobs:
           livecheck: true
         env:
           HOMEBREW_LIVECHECK_WATCHLIST: formulae
-          HOMEBREW_STDERR: 1
