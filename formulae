@@ -9,7 +9,6 @@ docker-compose
 okteto
 kustomize
 ack
-operator-sdk
 skopeo
 b3sum
 traefik
